@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.cv.controller.MenuController">
+   <children>
+      <VBox prefHeight="473.0" prefWidth="171.0" style="-fx-background-color: #2a3f54;">
+         <children>
+            <HBox prefHeight="56.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="83.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../storage/icons/account.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="63.0" prefWidth="163.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem-vindo, Bruno" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: none;" text=" Vendas" textFill="WHITE" wrapText="true">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/payment-method.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="116.0" prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: none;" text="Compras" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView disable="true" fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/offer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="164.0" prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: none;" text="Produtos" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView disable="true" fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/box.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="212.0" prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: none;" text="Clientes" textFill="WHITE" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView disable="true" fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/target.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="260.0" prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: none;" text="Fornecedores" textFill="WHITE" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView disable="true" fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/server.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>s
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="335.0" prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onLogout" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: none;" text="Sair" textFill="#e6be77" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView disable="true" fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/logoutOrange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
