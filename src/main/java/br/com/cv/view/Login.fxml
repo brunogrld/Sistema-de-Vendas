@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
@@ -10,7 +11,7 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="649.0" style="-fx-background-color: #ccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.cv.controller.LoginController">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="800.0" style="-fx-background-color: #ccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.cv.controller.LoginController">
    <children>
       <VBox prefHeight="558.0" prefWidth="254.0" style="-fx-background-color: #2a3f54;">
          <children>
@@ -91,6 +92,9 @@
                      <font>
                         <Font name="Arial Bold" size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children>
             </HBox>

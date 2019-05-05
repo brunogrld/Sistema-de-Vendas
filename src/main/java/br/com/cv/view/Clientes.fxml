@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1150.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.cv.controller.ClienteController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="561.0" HBox.hgrow="NEVER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="553.0">
+               <children>
+                  <Text fill="#2a3f54" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="561.0" style="-fx-background-color: #2a3f54;">
+               <children>
+                  <TextField fx:id="filterField" onKeyReleased="#onFilter" prefHeight="30.0" prefWidth="233.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="41.0">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../storage/icons/loupe.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onNewRecord" prefHeight="29.0" prefWidth="52.0" text="Novo">
+                     <HBox.margin>
+                        <Insets left="210.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="tableProducts" prefHeight="363.0" prefWidth="561.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+         <HBox.margin>
+            <Insets right="15.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="800.0" prefWidth="338.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="58.0" prefWidth="509.0" />
+            <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="38.0" prefWidth="506.0" style="-fx-background-color: #2a3f54;">
+               <children>
+                  <Text fx:id="formTitle" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserção">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox style="-fx-border-width: 1; -fx-border-color: #ccc;">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="471.0" style="-fx-background-color: #f2f2f2;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo: " textAlignment="RIGHT" wrappingWidth="69.234375" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <ChoiceBox fx:id="txtTipo" prefHeight="32.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="471.0" style="-fx-background-color: #f8f9fa;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" textAlignment="RIGHT" wrappingWidth="59.234375" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtNome" prefHeight="31.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="11.0" layoutY="62.0" prefHeight="51.0" prefWidth="471.0" style="-fx-background-color: #f2f2f2;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CPF/CNPJ:" textAlignment="RIGHT" wrappingWidth="78.234375" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtCpfCnpj" prefHeight="31.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="11.0" layoutY="113.0" prefHeight="51.0" prefWidth="471.0" style="-fx-background-color: #f8f9fa;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" textAlignment="RIGHT" wrappingWidth="59.234375" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtEmail" prefHeight="31.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="11.0" layoutY="164.0" prefHeight="51.0" prefWidth="471.0" style="-fx-background-color: #f2f2f2;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:" textAlignment="RIGHT" wrappingWidth="87.234375" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtTelefone" prefHeight="31.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="11.0" layoutY="113.0" prefHeight="62.0" prefWidth="504.0" style="-fx-background-color: #f8f9fa;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao:" textAlignment="RIGHT" wrappingWidth="109.234375" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="txtDescricao" prefHeight="31.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="3.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" right="10.0" top="8.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="76.0" prefWidth="563.0" style="-fx-background-color: #e5e5e5;">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClear" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: #e6be77;" text="Limpar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onSave" prefHeight="32.0" prefWidth="75.0" style="-fx-background-color: #428bff;" text="Salvar" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" right="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <HBox.margin>
+            <Insets left="15.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="20.0" right="10.0" />
+   </padding>
+</HBox>

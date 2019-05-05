@@ -33,7 +33,7 @@ public class Main  extends Application {
     	Parent menu =  FXMLLoader.load(getClass().getResource("/br/com/cv/view/Menu.fxml"));
     	 menuScene = new Scene(menu);
     	
-        stage.setTitle("Controle Vendas");
+        stage.setTitle("Sistema de Vendas");
         Image appIcon = new Image(getClass().getResourceAsStream("../storage/icons/account.png"));
         stage.getIcons().add(appIcon);
         stage.setScene(loginScene);
@@ -45,6 +45,7 @@ public class Main  extends Application {
     public static void changePage(String name) {
     	if(name=="menu") {
     		newStage.setScene(menuScene);
+    		newStage.setMaximized(true);
     	}else if(name=="login") {
     		newStage.setScene(loginScene);	
     	}

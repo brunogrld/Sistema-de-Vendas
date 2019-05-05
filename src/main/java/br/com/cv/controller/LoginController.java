@@ -29,9 +29,9 @@ public class LoginController {
 
 	@FXML
 	protected void onAuth(ActionEvent event) throws IOException, SQLException {
+		 returnMsg.setText("");
 	   if(username.getText().isEmpty()) {
 		   returnMsg.setText("O campo nome é obrigatório.");
-		   
 	   }else if(password.getText().isEmpty()) {
 		   returnMsg.setText("O campo senha é obrigatório.");
 	   }else {

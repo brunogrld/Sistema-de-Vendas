@@ -20,7 +20,7 @@ public class LoginDAO{
 		  Connection conn = ConnectionBD.getConnection();
 		  Statement statement =  conn.createStatement();
 		  try {
-			  ResultSet result = statement.executeQuery("SELECT * FROM usuario WHERE status='SIM' AND nome= '" + user + "'");
+			  ResultSet result = statement.executeQuery("SELECT * FROM sys_usuario WHERE status='SIM' AND nome= '" + user + "'");
 			  result.first();
 			    if (result.getString("senha").equals(password)) {
 			    	return true;
